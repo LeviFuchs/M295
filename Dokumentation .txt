@@ -1,0 +1,55 @@
+Dokumentation
+
+Entwicklung eines Express.js-Backends für Task-Management
+
+Heute habe ich mich intensiv der Entwicklung eines Express.js-Backends
+gewidmet, das als zentrales Element für eine Task-Management-Anwendung
+fungiert. Der Tag gliederte sich in mehrere Schlüsselschritte, die darauf
+abzielten, die geforderten Funktionalitäten gemäß den spezifizierten
+Anforderungen zu implementieren.
+
+Projektinitialisierung und Setup:
+Zu Beginn habe ich ein neues Express.js-Projekt aufgesetzt, um eine solide
+Grundlage für die Backend-Entwicklung zu schaffen. Hierbei habe ich das
+express-Framework für das Routing und die Middleware integriert. Die Nutzung
+von body-parser erleichterte die Verarbeitung von JSON-Anfragen, während
+jsonwebtoken für die Token-Authentifizierung sorgte.
+
+Datenmodellierung für Tasks:
+Die Datenstruktur für die zu verwaltenden Aufgaben wurde sorgfältig
+definiert. Jeder Task wurde durch ein Objekt im Array repräsentiert,
+wobei jeder Task eine eindeutige ID und einen aussagekräftigen Titel
+erhielt.
+
+Implementierung der RESTful-Endpunkte:
+Die Kernelemente des Backends wurden durch die Implementation der
+RESTful-Endpunkte realisiert. Hierbei wurden die Anforderungen an die
+HTTP-Statuscodes, korrektes JSON-Format und die Lieferung aktueller Daten
+genau berücksichtigt. Validierungsschritte, insbesondere die Pflichtangabe
+eines Titels, wurden dabei eingebaut.
+
+Token-basierte Authentifizierung:
+Die Sicherstellung einer sicheren Authentifizierung erfolgte durch die
+Implementierung einer Token-Authentifizierung mittels JSON Web Tokens (JWT).
+Hierbei wurde eine spezielle Middleware-Funktion integriert, um den Zugriff
+auf geschützte Endpunkte zu regulieren. Zusätzliche Endpunkte für Login,
+Token-Verifikation und Logout komplettierten die Authentifizierungsmechanismen.
+
+Testing und Fehlerbehandlung:
+Die Entwicklungsphase umfasste ausführliche Tests, die sicherstellen sollten,
+dass sämtliche Endpunkte korrekt funktionieren. Besonderes Augenmerk wurde auf
+die Implementierung von Fehlerbehandlungen für verschiedene Szenarien gelegt,
+einschließlich ungültiger Anfragen und nicht gefundenen Ressourcen.
+
+Dokumentation und Refaktorisierung:
+Eine umfassende Dokumentation wurde parallel zur Code-Erstellung gepflegt.
+Der Code wurde durch ausführliche deutsche Kommentare und klare Strukturierung
+verbessert. Abschließend erfolgte eine kritische Refaktorisierung des Codes,
+um Klarheit und Konsistenz sicherzustellen.
+
+Zusammenfassung:
+Die heutige Entwicklungsarbeit war darauf ausgerichtet, ein zuverlässiges und
+sicheres Express.js-Backend für eine Task-Management-Anwendung zu schaffen.
+Durch die konsequente Umsetzung der spezifizierten Anforderungen sowie bewährter
+Praktiken in Bezug auf Authentifizierung und Fehlerbehandlung konnte ein solides
+Fundament für die Weiterentwicklung gelegt werden.
